@@ -21,16 +21,16 @@ public class AppComponent implements ApplicationComponent {
     public void initComponent() {
         checkAndCreateRootDir();
 
-        ActionManager am = ActionManager.getInstance();
-        ArrayList<PackageTemplate> listPackageTemplate = PackageTemplateHelper.getListPackageTemplate();
-
-        for (PackageTemplate pt : listPackageTemplate) {
-            if (!pt.isShouldRegisterAction()) {
-                continue;
-            }
-            RunTemplateAction action = new RunTemplateAction(pt.getName(), pt);
-            am.registerAction(Const.ACTION_PREFIX + action.getName(), action);
-        }
+//        ActionManager am = ActionManager.getInstance();
+//        ArrayList<PackageTemplate> listPackageTemplate = PackageTemplateHelper.getListPackageTemplate();
+//
+//        for (PackageTemplate pt : listPackageTemplate) {
+//            if (!pt.isShouldRegisterAction()) {
+//                continue;
+//            }
+//            RunTemplateAction action = new RunTemplateAction(pt.getName(), pt);
+//            am.registerAction(Const.ACTION_PREFIX + action.getName(), action);
+//        }
     }
 
     /**

@@ -4,3 +4,6 @@ out/
 /.idea/dictionaries/
 PackageTemplates.zip
 /.idea/misc.xml
+/.gradle/
+/.idea/
+/build/
