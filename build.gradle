@@ -43,7 +43,10 @@ intellij {
 
 runIde {
 	setJvmArgs(["-Xms2g","-Xmx4g"])
-	setJbrVersion("11.0.8")
+//	setJbrVersion("11.0.8")
+	setJbrVersion("1145.8")
+	
+	
 }
 
 compileKotlin {
