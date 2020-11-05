@@ -23,7 +23,8 @@ dependencies {
 }
 
 patchPluginXml {
-    sinceBuild '141.0'
+    sinceBuild '200.0'
+    untilBuild '204.0'
     changeNotes """
       Changelog available on GitHub pages."""
     pluginDescription """
@@ -32,10 +33,17 @@ patchPluginXml {
 }
 
 intellij {
-    version '2018.2.3'
+    version '2020.2.3'
+    type "IU"
     pluginName 'Package Templates'
     updateSinceUntilBuild false
     sameSinceUntilBuild true
+    
+}
+
+runIde {
+    setJvmArgs(["-Xms2g","-Xmx4g"])
+    setJbrVersion("11.0.8")
 }
 
 compileKotlin {
